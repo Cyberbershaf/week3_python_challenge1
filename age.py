@@ -1,7 +1,10 @@
 
+import datetime
+
 print("This program determines whether someone is a minor, youth or elder")
 
-current_year = 2019
+current_date = datetime.date.today() #Getting current date
+current_year = current_date.year #Converting current date to year
 birth_year = int(input("Enter your birth year: "))
 age = current_year - birth_year
 
@@ -13,3 +16,5 @@ else:
     print("You are elder!")
 
 print("Done, Thank you!")
+
+#By MUYIVU SHAFIQ
